@@ -1,6 +1,7 @@
 
 .container {
   min-width: 400px;
+  margin-top: 35px;
 }
 
 .info-panels {
@@ -16,9 +17,9 @@
 
 }
 
-div {
+/*div {
   border: 1px dashed black;
-}
+}*/
 
 .custom-nav ul{
     overflow: hidden;
@@ -102,6 +103,10 @@ div {
   z-index: 2;
 }
 
+.hiddenInfo {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .info-panels {
     width: 80%;
@@ -128,7 +133,7 @@ div {
 }
 
 @media (min-width: 1200px) {
-  #logo, .custom-nav{
+  /*#logo, .custom-nav{
     float: none;
     margin:none;
     width: 100%;
@@ -145,9 +150,44 @@ div {
   }
   .col-md-12{
     position: relative;
+  }*/
+
+  .info-panels {
+    width: 100%;
+    max-width: 300px;
   }
-  #logo{
+
+  .custom-nav, #logo {
+    float: none;
+    display: block;
+    font-size: 19pt;
 
   }
+
+  .sidenav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo {
+    order: -1;
+  }
+
+  .hiddenInfo {
+    display: block;
+    width: 50%;
+    font-size: 8pt;
+  }
+
+  .custom-nav ul li{
+    display: block;
+    float: none;
+
+  }
+
+
+
+
+
 
 }
