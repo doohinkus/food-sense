@@ -127,7 +127,27 @@ div {
   }
 }
 
-@@media (min-width: 1200px) {
+@media (min-width: 1200px) {
+  #logo, .custom-nav{
+    float: none;
+    margin:none;
+    width: 100%;
+    position: absolute;
 
+  }
+  .custom-nav ul li{
+    display: block;
+    float: none;
+
+  }
+  .custom-nav{
+    top: 120px;
+  }
+  .col-md-12{
+    position: relative;
+  }
+  #logo{
+
+  }
 
 }
